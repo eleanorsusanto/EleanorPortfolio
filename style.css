@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.Page{
+    background-color: #251F2F;
+    min-height: 200vh;
+    padding-left: 8%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+}
+
+.Navigation{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.SiteLogo{
+    display:flex;
+}
+
+.logo{
+    width: 130px;
+    margin: 30px 0;
+}
+
+.MenuLogo{
+    width: 60px;
+    cursor: pointer;
+}
+
+/* NAV */
+nav{
+    flex:1;
+    text-align: right;
+}
+
+.NavBar{
+    display: flex;
+    justify-content: center;
+    float:right;
+}
+
+.NavBar li{
+    list-style: none;
+    margin-right: 40px;
+    display: inline-block;
+}
+
+.NavBar li a{
+    text-decoration: none;
+    color: #845C8E;
+    padding: 10px 10px;
+    border-radius: 22px;
+    font-size: 16px;
+}
+
+.NavBar li a:hover{
+    color:#845C8E;
+    background-color: #FFFFFF;
+    font-weight: 600;
+    transform:scale(1,5);
+}
+
+/* MOBILE NAV */
+
+#MobileNav{
+    display: none;
+}
+
+.NavMob{
+    position: relative;
+    display: inline-block;
+}
+
+.NavMobID{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.NavMobID span{
+    background-color: #845C8E;
+    width:100%;
+    height: 3px;
+    transition:all 0.2 ease-in-out;
+}
+
+.NavMobList{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #845C8E;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.NavMobList.open{
+    max-height: 350px;
+}
+
+/*BODY*/
+
+
+.Bio{
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+}
+
+.Bio1{
+    flex-basis: 50%;
+    position: relative;
+    margin-left: 50px;
+    width:70%;
+}
+
+.Bio1 h1{
+    font-size: 60px;
+    color:#845C8E;
+    font-weight: 600;
+}
+
+.Bio1 span{
+    font-size: 60px;
+    color:#96749E;
+    font-weight: 700;
+
+}
+
+.Bio1 P{
+    color:#845C8E;
+}
+
+.Bio1 a{
+    background:linear-gradient(to right,#845C8E,#96749E);
+    border-radius: 15px;
+    padding: 10px 20px;
+    display: inline-block;
+    margin:40px 0;
+    color:#FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Bio1 a:hover{
+    font-weight:600;
+}
+
+.Portfolio{
+    padding: 50px 0;
+}
+
+.Container h1{
+    color:#845C8E;
+    text-align: center;
+    font-size: 50px;
+    height: 100%;
+}
+
+.ProjectPage{
+    margin: 50px 0;
+    display: flex;
+    align-items:center ;
+    flex-direction: column;
+}
+
+.ProjectList{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap:40px;
+
+}
+
+.Projects{
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    border-color: #a3a3a3;
+    background: #845C8E;
+    justify-content: center;
+    align-items: center;
+    min-height: fit-content;
+}
+
+.Projects img{
+    width: 100%;
+    height:70%;
+    object-fit: cover;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo{
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    justify-content: center;
+    min-height: fit-content;
+    margin-bottom: 30px;
+}
+
+
+.text h3{
+    margin-top: 10px;
+    color:#251F2F;
+    text-align: center;
+}
+
+.text p{
+    color:#251F2F;
+    text-align: center;
+    font-size:13px;
+}
+
+.text a{
+   background :#251F2F;
+    border-radius: 15px;
+    padding: 10px 15px;
+    display: inline-block;
+    margin:20px 15px;
+    color:#845C8E;
+    text-decoration: none;
+    font-weight: 600;
+    font-size:14px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.text a:hover{
+    color:#96749E;
+}
+
+.ProjectThings{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.ProjectThings a{
+    background:linear-gradient(to right,#845C8E,#96749E);
+    border-radius: 15px;
+    padding: 10px 20px;
+    display: inline-block;
+    margin:40px 0 20px 10px;
+    color:#FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.Contact{
+    background-color: #251F2F;
+    padding-bottom: 30px;
+
+}
+
+.Contact h1{
+    color:#845C8E;
+    text-align: center;
+}
+
+.SocMed{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.SocMed a{
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.SocMed a i{
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    justify-content: center;
+}
+
+.Contact p{
+    color:#845C8E;
+    text-align: center;
+}
+
+.MyProjects h1{
+    font-size: 35px;
+    color:#845C8E;
+}
+
+.desc{
+    font-size: 18px;
+    color:#96749E;
+}
+
+@media screen and (max-width:1400px) {
+    .Container {
+        height: fit-content;
+    
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #MobileNav{
+        display: flex;
+    
+    }
+}
+
+@media screen and (max-width:600px) {
+    .NavMobID span{
+        display: block;
+        cursor: pointer;
+    }
+
+    .MenuLogo{
+        width:fit-content;
+    }
+
+    .NavMobList{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #845C8E;
+    }
+
+    .NavMobList li{
+        display: block;
+        width: fit-content;
+}
