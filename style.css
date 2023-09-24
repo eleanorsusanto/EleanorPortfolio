@@ -336,37 +336,80 @@ nav{
 @media screen and (max-width:1400px) {
     .Container {
         height: fit-content;
-    
     }
-}
 
-@media screen and (max-width:1200px) {
-    #MobileNav{
+    .ProjectList{
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+}
+
+
+@media screen and (max-width:845px) {
+    .ProjectList{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
     
+    .text p{
+        font-size: 13px;
+    }
+
+    .logo{
+        width: 90px;
     }
 }
 
-@media screen and (max-width:600px) {
-    .NavMobID span{
-        display: block;
-        cursor: pointer;
+@media screen and (max-width:768px) {
+
+
+    .ProjectList{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+    
+    .text p{
+        font-size: 11px;
     }
 
-    .MenuLogo{
-        width:fit-content;
+    .logo{
+        width: 70px;
     }
 
-    .NavMobList{
-        position: absolute;
-        top: 80px;
-        left: 0;
-        right: 0;
-        width: 100vw;
-        background: #845C8E;
+    .NavBar li a{
+        text-decoration: none;
+        text-align: center;
+        color: #845C8E;
+        padding: 10px 10px;
+        border-radius: 22px;
+        font-size: 13px;
+        float: right;
     }
 
-    .NavMobList li{
-        display: block;
-        width: fit-content;
+    .NavBar li a:hover{
+        color:#845C8E;
+        background-color: #FFFFFF;
+        font-weight: 600;
+        transform:scale(1);
+    }
+}
+
+@media screen and (max-width:400px) {
+
+
+    .NavBar li a{
+        text-decoration: none;
+        text-align: center;
+        color: #845C8E;
+        padding: 10px 10px;
+        border-radius: 22px;
+        font-size: 11px;
+        float: right;
+    }
 }
