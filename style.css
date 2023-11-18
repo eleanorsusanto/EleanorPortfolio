@@ -170,8 +170,41 @@ nav{
     font-weight:600;
 }
 
+/*PROJECT*/
+
 .Portfolio{
     padding: 50px 0;
+}
+
+.skills-section{
+    float: center;
+}
+
+
+.skills-section h1{
+    color:#845C8E;
+    text-align: center;
+    font-size: 50px;
+    height: 100%;
+}
+
+.SkillList{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap:40px;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.Skills{
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    border-color: #a3a3a3;
+    background: #845C8E;
+    justify-content: center;
+    align-items: center;
+    min-height: fit-content;
 }
 
 .Container h1{
@@ -332,6 +365,18 @@ nav{
 .desc{
     font-size: 18px;
     color:#96749E;
+}
+
+#Databases{
+    color:#845C8E;
+    text-align: center;
+    margin: 0px 20px 30px 20px;
+}
+
+#Websites{
+    color:#845C8E;
+    text-align: center;
+    margin: 70px 20px 30px 20px;
 }
 
 @media screen and (max-width:1400px) {
